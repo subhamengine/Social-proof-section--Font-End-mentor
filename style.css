@@ -1,0 +1,195 @@
+:root{
+    --VeryDarkMagenta: hsl(300, 93%, 27%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 39%, 89%);
+    --DarkGrayishMagenta2:hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+body{
+    font-family: 'Spartan', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bgTopDesk{
+    display: none;
+}
+.bgBTdesk{
+    display: none;
+}
+.bgphoneTop{
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    top: -130px;
+    left: -60px;
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.heading{
+    width: 200px;
+    text-align: center;
+    color: var(--VeryDarkMagenta);
+    
+}
+.para{
+    width: 260px;
+    text-align: center;
+    
+    color: var(--DarkGrayishMagenta2);
+}
+.star1,.star2,.star3{
+    width: 260px;
+    text-align: center;
+    background-color: var(--DarkGrayishMagenta);
+    border-radius: 7px;
+    margin: 5px;
+    line-height: 28px;
+    color: var(--VeryDarkMagenta);
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.card1,.card2,.card3{
+    width: 210px;
+    background-color: var(--VeryDarkMagenta);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+}
+img{
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.status{
+    color: var(--DarkGrayishMagenta2);
+}
+.comments{
+    color: rgb(216, 214, 214);
+}
+
+@media(min-width:1000px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        
+        width: 100vw;
+        height: 98vh;
+        display: flex;
+       
+        flex-direction: column;
+    }
+    .upper,.lower{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading{
+        margin-top: 100px;
+        width: 350px;
+        text-align: unset;
+    }
+    .writings{
+        width: 40%;
+       margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 280px;
+    }
+    .para{
+        
+        text-align: unset;
+        width: 400px;
+    }
+    .card1,.card2,.card3{
+        width: 240px;
+        height: 150px;
+        margin-top: -50px;
+        margin-left: 50px;
+    }
+    .mainS{
+        margin-top: 80px;
+        margin-left: -50px;
+    }
+    .star1,.star2,.star3{
+        display: flex;
+        width: 400px;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .star2{
+        margin-left: 30px;
+    }
+    .star3{
+        margin-left: 60px;
+    }
+    .lower{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 200px;
+        flex-direction: row;
+        margin-top: 25px;
+    }
+    .card2{
+        margin-top: 20px;
+    }
+    .card3{
+        margin-top: 80px;
+    }
+    .bgphoneTop{
+        display: none;
+    }
+    .bgTopDesk{
+        display: unset;
+        width: 800px;
+        top: -100px;
+        left: -150px;
+        position: absolute;
+    }
+    .bgBTdesk{
+        display: unset;
+        align-items: flex-end;
+        width: 400px;
+        position: absolute;
+        bottom: 0px;
+        right: -80px;
+        height: 500px;
+    }
+}
